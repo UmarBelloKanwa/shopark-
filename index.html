@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-NG" >
+   <head>
+      <title> Shopark </title>
+      <meta name="description" content="Shopark is an e-commerce website" />
+      <meta name="keywords" content="HTML, CSS, JavaScript" />
+      <meta name="author" content="Umar BK" >
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <base target="_blank" >
+      <style>
+      *
+      { box-sizing:border-box;}
+      html, body
+      { margin:0;}
+      :root {
+        --native:rgb(23, 30, 96);
+        --nearest:rgb(10, 86, 148);}
+      header 
+      { color:var(--native);
+        background:white;
+        width:100%;
+        font-weight:bold;
+        font-family:monospace;
+        position:fixed;
+        top:0;
+        padding-bottom:3vw;
+        border-bottom:3px solid var(--native);
+        border-radius:0 0 5vw 5vw;}
+      header div
+      { float:right;
+        margin:1em 3vw 0 3vw;}
+      header input 
+      { height:2.5em;
+        width:77%;
+        color:white;
+        margin-left:3vw;
+        display:inline;
+        background:var(--nearest);
+        border:3px solid #ccc;
+        border-radius:3vw;
+        outline:none;
+        padding:3vw 0 3vw 5vw;}
+      header input::placeholder
+      { font-size:medium;
+        color:white;
+        padding-left:5px;}
+      header figure
+      { margin:-1vw 3.5vw 0 0;
+        float:right; }
+      article 
+      { background:var(--native);
+        font-family:courier;
+        box-shadow:0px 0px 0px 11px rgba(0, 0, 255, .1);
+        font-size:small;
+        font-weight:bold;
+        padding:5px 0;
+        margin:110px 2vw 5vw;
+        color:white;
+        text-align:center;
+        border-radius:0 5vw;}
+      article:hover
+      { opacity:1;}
+      article h1, h2
+      { margin:1vw;}
+      section#product-cate, aside + h2 + section 
+      { display:flex;}
+      section#product-cate figure img
+      { width:25vw;
+        height:25vw;}
+      section figure img, aside figure img
+      { width:35vw;
+        height:50vw;
+        border-radius:5vw;}
+      section h2
+      { background:white;}
+      section, aside, h2
+      { display:grid;
+        grid-template-columns:auto auto auto;
+        height:auto;
+        text-align:center;
+        color:var(--native);
+        font-family:monospace;
+        background:rgba(0, 0, 255, .1);
+        overflow:scroll;
+        margin:1px 2vw;
+        padding:5px;
+        border-bottom:3px solid var(--native);
+        border-radius:5vw;}
+      aside 
+      { height:70vw;}
+      figure 
+      { display:inline-grid;
+        grid-template-columns:auto;
+        margin:3px 3vw;
+        padding:5px;
+        background:white;
+        border-radius:5vw;}
+      footer 
+      { padding:3vw;
+        background:var(--native);
+        border-top:3px solid var(--native);
+        border-radius:3vw 3vw 0 0;
+        color:white;
+        text-align:center;}
+      footer a
+      { color:white;
+        text-decoration:none;
+        display:block;
+        margin:3vw;
+        text-align:left;}
+      </style>
+   </head>
+   <body>
+      <header>
+         <img src="logo.png" width="150em" >
+         <div> My account </div>
+         <div> Categories </div> 
+         <input type="search" placeholder="Search items..." >
+         <figure>
+            <img src="cart.png" width="25em" > 
+            <figcaption> Cart </figcaption>
+         </figure>
+      </header>
+      <article> 
+         <h1> Welcome to Shopark </h1>
+         The best place to trades with high quality goods, and cheap stuff for you to buy.
+      </article>
+      <h2> Product Categories </h2>
+      <section id="product-cate" >
+         <figure>
+            <img src="shoe.png" > 
+            <figcaption> Shoes </figcaption>
+         </figure>
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+         <figure>
+            <img src="phone.png" > 
+            <figcaption> Smartphone </figcaption>
+         </figure>
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+      </section>
+      <h2> Most Popular Products </h2>
+      <aside style="border:none;" >
+         <figure>
+            <img src="shoe.png" > 
+            <figcaption> Shoes </figcaption>
+         </figure>
+         <figure>
+            <img src="phone.png" > 
+            <figcaption> Smartphone </figcaption>
+         </figure>
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+         <figure>
+            <img src="shoe.png" > 
+            <figcaption> Shoes </figcaption>
+         </figure>
+         <figure>
+            <img src="phone.png" > 
+            <figcaption> Smartphone </figcaption>
+         </figure>
+      </aside> 
+      <h2> Newest Products </h2>
+      <section>
+         <figure>
+            <img src="shoe.png" > 
+            <figcaption> Shoes </figcaption>
+         </figure>
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+         <figure>
+            <img src="phone.png" > 
+            <figcaption> Smartphone </figcaption>
+         </figure>
+         <figure>
+            <img src="watch.png"  > 
+            <figcaption> Watch </figcaption>
+         </figure> 
+      </section>
+      <footer>
+         <a href="#" > Home </a>
+         <a href="#" > Sign in/Register </a>
+         <a href="#" > Sell an item </a>
+         <a href="#" > FAQ Page </a>
+         <a href="#" > Contact us </a>
+         <a href="#" > Download our app </a>
+         <hr>
+         <div> © Copyright 2023. All rights reserved | <br>
+         <img src="logo.png" width="25%"  > </div>
+      </footer>
+   </body>
+</html>
