@@ -1,11 +1,14 @@
 # Simple Frontend-Based E-commerce Site README
 
+https://umarbellokanwa.github.io/shopark-/ (mobile view)
+
 ## Introduction
 This is a simple e-commerce site built entirely using frontend technologies. It allows users to browse products, add items to a shopping cart, and proceed to checkout. The site is designed for small-scale online stores and can be easily customized to fit various product categories.
 
 ## Features
 1. **Product Listing**
    - Displays a variety of products with images, descriptions, and prices.
+   - Search for products
 
 2. **Shopping Cart**
    - Users can add or remove items from the cart and view the total price.
